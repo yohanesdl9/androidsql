@@ -6,4 +6,4 @@ In this project, I'm using 3 libraries that I've downloaded from <https://github
 - <https://www.youtube.com/watch?v=5v_1cqkFSuQ&t=2283s>
 - <https://www.youtube.com/watch?v=YdmJaSQWP9c&t=71s>
 
-For the CodeIgniter project associated with this, visit <https://github.com/yohanesdl9/androidsqlweb>. The SQL file is included in database directory.
+For the CodeIgniter project associated with this, visit <https://github.com/yohanesdl9/androidsqlweb>. The SQL file is included in **database** directory.
