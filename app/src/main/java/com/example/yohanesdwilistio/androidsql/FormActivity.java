@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,7 @@ import com.kosalgeek.genasync12.AsyncResponse;
 import com.kosalgeek.genasync12.PostResponseAsyncTask;
 
 import java.util.HashMap;
+import java.util.regex.Pattern;
 
 public class FormActivity extends AppCompatActivity {
     /* Activity that display form to fill contact's data to be inserted/updated */
@@ -137,6 +139,6 @@ public class FormActivity extends AppCompatActivity {
     }
 
     private boolean validateDataInput(String fname, String lname, String mail, String phone){
-        return fname.isEmpty() || lname.isEmpty() || mail.isEmpty() || phone.isEmpty();
+        return fname.isEmpty() || lname.isEmpty() || (mail.isEmpty() && !Patterns.EMAIL_ADDRESS.matcher(mail).matches()) || phone.isEmpty();
     }
 }
